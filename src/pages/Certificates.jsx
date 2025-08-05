@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import ListGroup from '../components/Listgroup'
+import ListGroup from '../components/ListGroup'
 import MainContainer from '../components/MainContainer'
 import Layout from '../components/Layout'
 import WarrantyCertificate from '../components/certificates/WarrantyCertificate'
