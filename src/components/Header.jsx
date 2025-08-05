@@ -32,7 +32,7 @@ function Header(){
 
         <nav className='nav sticky-top'>
             <div className="logo-container">
-                <img src='/main-logo.png' alt='TechByHarry' className='logo'/>
+                <Link to="/"><img src='/main-logo.png' alt='TechByHarry' className='logo'/></Link>
                 {/* <div className="brand-name">
                     <h1>Tech By Harry</h1>
                     <h3>Simplifying Tech | Empowering You</h3>
