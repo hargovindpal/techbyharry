@@ -1,0 +1,322 @@
+*{
+    
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    font-size: 16px;
+}
+.site-header{
+    background-color: #fac437;
+    padding:0rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 2.5rem; 
+
+}
+.contact-bar, .social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact-bar ul, .social-icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+ul li {
+    list-style: none;
+    
+}
+li a{
+    text-decoration: none;
+    font-weight: 400;
+}
+.contact-bar li a,
+.social-icons li a {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 20px;
+}
+
+.social-icons li a {
+  background-color: black;
+  color: white !important;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0f172a;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 5rem;
+  margin-left: 10px;
+}
+.brand-name{
+    display: inline-block;
+    text-align: left;
+}
+.brand-name h1{
+    font-size: 3rem;
+    margin: 0;
+}
+.brand-name h3{
+    margin: 0;
+    font-size: 1.2rem;
+    width: 100%;
+
+    text-align: center;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.nav-list a {
+    position: relative;
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-list li:hover a{
+    margin-bottom: 50px;
+
+}
+.nav-list li a::after{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    top:120%;
+    width: 0%;
+    height:2px;
+    background-color:#fac437;
+    transition: width 0.3s ease;
+
+}
+
+.nav-list li a:hover::after {
+    width: 100%;
+    align-items: center;
+}
+
+.jumbotron{
+    background-image: url('../bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.list-group-item.active{
+    background-color: black !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border:none;
+}
+
+.list-group a:not(:first-child)::before{
+    content: "\f07c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgb(158, 103, 35);
+    margin-right: 8px;
+}
+.list-group a:hover{
+   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.list-group a:hover:not(.active){
+    background-color: #fac437 !important;
+    transform: scale(1.01);
+} 
+
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f172a !important;
+    color:#FFF !important;
+    padding:0.5rem;
+} 
+
+.w-max-content{
+    width: max-content !important;
+}
+
+.primaryButton {
+    border: none;
+    margin-right: 2rem;
+    line-height: 2rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    
+    background:linear-gradient(to right,#fac437,#da9e06);
+}
+.primaryButton:hover{
+    cursor: pointer;
+    background:linear-gradient(to right,#da9e06, #fac437);
+}
+.cardtitle{
+    display: block;
+
+    align-items: center;
+
+}
+.pos-fixed{
+    position:fixed;
+ 
+    top:25%;
+}
+
+.cardtitle>h4::before{
+    content: "\f07c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgb(158, 103, 35);
+    margin-right: 8px;
+}
+
+.DownloadBtn {
+    border: none;
+    margin-right: 2rem;
+    line-height: 2rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    
+    background:linear-gradient(to right,#fac437,#da9e06);
+}
+.DownloadBtn:hover{
+    cursor: pointer;
+    background:linear-gradient(to right,#da9e06, #fac437);
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+}
+
+footer form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    padding:2rem;
+    height: 5rem;
+    width:50%;
+    box-shadow: 20px 10px 10px 15px  #131212, -5px -10px -10px 15px #d6d2d2;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+footer input {
+    border: 0.02rem solid #da9e06;
+    width: 70%;
+    margin-right:2rem;
+    line-height: 2rem;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.5rem;
+}
+footer input[type="search"]:focus {
+  border: 2px solid #da9e06; 
+  outline: none;
+  box-shadow: 0 0 5px black; 
+}
+
+
+footer .company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .company img{
+    max-width: 20rem;
+}
+footer ul {
+
+    margin:0 !important;
+    padding-left:0.5rem !important;
+}
+
+
+footer ul li {
+    list-style: none;
+    align-items: start;
+    margin:0;
+    padding:0.2rem 0rem;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #FFF;
+}
+footer ul li a::before{
+    content: '⦿ ';
+    text-decoration: none;
+    color: #fac437;
+
+}
+
+footer h4{
+    color: #fac437;
+}
+.copyright {
+  background-color: #fac437;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+
