@@ -3,15 +3,15 @@ import Socialicons from "./Socialicons"
 import PrimaryButton from "./PrimaryButton"
 import Instragram from "./Instragram"
 
-function Footer(){
-    return(
+function Footer() {
+    return (
         <>
             <footer className="container-fluid">
                 <div className="container-xxl">
                     <div className="row p-4">
                         <div className="col company">
-                            <img src="public/logo.png" alt="" />
-                            <img src="public/services.png" alt="" />
+                            <img src="/logo.png" alt="" />
+                            <img src="/services.png" alt="" />
                         </div>
                         <div className="col">
                             <h4>Category</h4>
@@ -52,11 +52,11 @@ function Footer(){
 
 
             <div className='copyright'>
-                <p>© 2025  Tech By Harry. All Rights Reserved. | Designed & Maintained by : <Link to="/">HarryTechCraft</Link> 
+                <p>© 2025  Tech By Harry. All Rights Reserved. | Designed & Maintained by : <Link to="/">HarryTechCraft</Link>
                 </p>
-                <Socialicons/>
+                <Socialicons />
             </div>
-            <Instragram/>
+            <Instragram />
 
         </>
     )
