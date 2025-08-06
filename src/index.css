@@ -328,6 +328,45 @@ footer h4{
 
 
 
+    .previewFile {
+  width: 100%;
+  height: fit-content; 
+  position: relative;
+  overflow: hidden; 
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+}
+
+    .previewFile img {
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+    display: block;
+}
+.previewFile a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin:10px 0;
+    z-index: 2;
+}
+.previewFile button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin:10px 10px;
+    z-index: 2;
+}
+
+aside {
+  position: sticky;
+  top: 7rem;
+  align-self: start;
+  z-index: 100;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -391,5 +430,8 @@ footer h4{
     display: flex !important; 
     }
 
+    aside {
+    position: static;
+  }
 
 }
