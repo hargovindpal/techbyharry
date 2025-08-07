@@ -6,7 +6,7 @@ import MainContainer from '../components/MainContainer';
 import Layout from '../components/Layout';
 
 import BankStatementRequestLetter from '../components/NOC/BankStatementRequestLetter';
-import NOCBankLetter from '../components/noc/NOCBankLetter';
+import NOCBankLetter from '../components/NOC/NOCBankLetter';
 import NOCGSTLetter from '../components/NOC/NOCGSTLetter';
 import NOCVisaLetter from '../components/NOC/NOCVisaLetter';
 import NOCVehicleLetter from '../components/NOC/NOCVehicleLetter';
