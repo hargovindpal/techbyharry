@@ -149,7 +149,7 @@ nav{
     border:none;
 }
 
-.list-group a:not(:first-child)::before{
+.list-group .list-group-item:not(:first-child)::before{
     content: "\f07c";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -163,6 +163,13 @@ nav{
     background-color: #fac437 !important;
     transform: scale(1.01);
 } 
+
+.list-group-item.active {
+    background-color: #ffbf00;
+    color: black;
+    font-weight: bold;
+    border-color: #ffa500;
+}
 
 
 

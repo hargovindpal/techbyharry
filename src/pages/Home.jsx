@@ -1,14 +1,199 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+
 import ListGroup from '../components/ListGroup'
 import PrimaryButton from '../components/PrimaryButton'
-import Card from '../components/FileCard'
-import WarrantyCertificate from '../components/certificates/WarrantyCertificate'
-import ModernTemplates from './ModernTemplates'
-import ExperienceCertificate from '../components/certificates/ExperienceCertificate';
 
 function Home() {
-  const [setSelected] = useState(null);
+
+  const navigate = useNavigate();
+  const listGroups = [
+  {
+    title: 'Modern Templates',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/ModernTemplates', { state: { selectedName } });
+    },
+    items: [
+      { name: 'Marriage Biodata Templates (120)' },
+      { name: 'CV / Resume Templates (350)' },
+      { name: 'Cover Letter for Resume (56)' },
+      { name: 'Accountant Resumes (20)' },
+      { name: 'Fresher Resumes (10)' },
+      { name: 'Computer Operator Resumes (20)' },
+    ],
+  },
+  {
+    title: 'Resume CV Templates',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/Resume_CV_Templates', { state: { selectedName } });
+    },
+    items: [
+      { name: 'ATS Friendly Resume (20)' },
+      { name: 'Web Developer Resume (20)' },
+      { name: 'Doctor Resume (20)' },
+      { name: 'Engineer Resume (20)' },
+      { name: 'Photographer Resume (20)' },
+      { name: 'MIS Executive Resume (20)' },
+      { name: 'School Teacher Resume (20)' },
+    ],
+  },
+  {
+    title: 'Certificates',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/certificates', { state: { selectedName } });
+    },
+    items: [
+      { name: 'Warranty Certificates (20)' },
+      { name: 'Bonafide Certificate (10)' },
+      { name: 'Experience Certificates (30)' },
+      { name: 'Medical Certificates (10)' },
+      { name: 'Transfer Certificate (5)' },
+      { name: 'Character Certificate (5)' },
+      { name: 'Course Certificate (10)' },
+    ],
+  },
+  {
+    title: 'Letterhead Templates',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/LetterHeads', { state: { selectedName } });
+    },
+    items: [
+      { name: 'Restaurant Letterhead (20)' },
+      { name: 'Architecture Letterhead (20)' },
+      { name: 'Real Estate Letterhead (20)' },
+      { name: 'Event Planner Letterhead (20)' },
+      { name: 'Lawyer Letterhead (20)' },
+      { name: 'Doctor Letterhead (20)' },
+      { name: 'Pharmacy Letterhead (20)' },
+    ],
+  },
+  {
+    title: 'Online Tools (Free)',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/OnlineTools', { state: { selectedName } });
+    },
+    items: [
+      { name: 'Income Tax Calculator' },
+      { name: 'WhatsApp without Save No.' },
+      { name: 'Date to Text Converter' },
+      { name: 'GST Calculator for Bulk' },
+      { name: 'Keyboard Tester' },
+      { name: 'Age Calculator' },
+      { name: 'EMI Calculator' },
+    ],
+  },
+  {
+    title: 'Productive',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/Productive', { state: { selectedName } });
+    },
+    items: [
+      { name: 'PowerPoint Templates (20)' },
+      { name: 'Payment Voucher (50)' },
+      { name: 'Shortcut Keys (80)' },
+      { name: 'YouTube Art (30)' },
+      { name: 'YouTube Name Ideas (2000)' },
+      { name: 'Photoshop Clip Arts' },
+      { name: 'Corel Formats' },
+    ],
+  },
+  {
+    title: 'Bank & NOC Letters',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/Bank_NOC_Letters', { state: { selectedName } });
+    },
+    items: [
+      { name: 'Bank Statement Request Letter (5)' },
+      { name: 'NOC Letter Format for Bank (5)' },
+      { name: 'NOC Letter for GST (5)' },
+      { name: 'NOC Letter for Visa (5)' },
+      { name: 'NOC Letter for Vehicle (5)' },
+      { name: 'Undertaking Letter (5)' },
+    ],
+  },
+  {
+    title: 'Bank Forms (PDF)',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/BankForms', { state: { selectedName } });
+    },
+    items: [
+      { name: 'Citi Bank Forms' },
+      { name: 'PNB Forms' },
+      { name: 'HDFC Forms' },
+      { name: 'Axis Bank Forms' },
+    ],
+  },
+  {
+    title: 'Employee Management',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/EmployeeManagement', { state: { selectedName } });
+    },
+    items: [
+      { name: 'Accountant Job Letter (5)' },
+      { name: 'Warning Letter To Employee (5)' },
+      { name: 'Termination Letter (5)' },
+      { name: 'Job Application Cover Letter (5)' },
+      { name: 'Internship Experience Letter (5)' },
+      { name: 'Holiday Announcement (5)' },
+    ],
+  },
+  {
+    title: 'HR Letters',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/HRLetters', { state: { selectedName } });
+    },
+    items: [
+      { name: 'Salary Increment Offer Letter (5)' },
+      { name: 'Salary Increment Request (5)' },
+      { name: 'Job Joining Letter (5)' },
+      { name: 'Appointment Letter (20)' },
+      { name: 'Resignation Letter (20)' },
+    ],
+  },
+  {
+    title: 'Student & Misc Letters',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/Student_Misc_Letters', { state: { selectedName } });
+    },
+    items: [
+      { name: 'Leave Application to Principal (8)' },
+      { name: 'Bank Account Closing Letter (5)' },
+      { name: 'Bonafide Certificated Letter (5)' },
+      { name: 'TC Letter (5)' },
+      { name: 'Internship Offer Letter (5)' },
+      { name: 'Rent Agreement Format (5)' },
+    ],
+  },
+
+  {
+    title: 'No Objection Certificates',
+    onSelect: (item) => {
+      const selectedName = item.name.split('(')[0].trim();
+      navigate('/Student_Misc_Letters', { state: { selectedName } });
+    },
+    items: [
+      { name: 'Leave Application to Principal (8)' },
+      { name: 'Bank Account Closing Letter (5)' },
+      { name: 'Bonafide Certificated Letter (5)' },
+      { name: 'TC Letter (5)' },
+      { name: 'Internship Offer Letter (5)' },
+      { name: 'Rent Agreement Format (5)' },
+    ],
+  },
+];
+
 
   return (
     <>
@@ -28,172 +213,19 @@ function Home() {
 
       <div className="container-fluid">
         <div className="row mb-4 p-4">
-        <ListGroup
-          className="active"
-          title="Modern Templates"
-          onSelect={setSelected}
-          items={[
-            { name: 'Marriage Biodata Templates (120)', component: <WarrantyCertificate /> },
-            { name: 'CV / Resume Templates (350)', component: <ExperienceCertificate /> },
-            { name: 'Cover Letter for Resume (56)', url: '/ModernTemplates' },
-            { name: 'Accountant Resumes (20)', url: '/ModernTemplates' },
-            { name: 'Fresher Resumes (10)', url: '/ModernTemplates' },
-            { name: 'Computer Operator Resumes (20)', url: '/ModernTemplates' },
-          ]}
-        />
+            {listGroups.map( (group)=>(
 
-        <ListGroup
-          className="active"
-          title="Resume CV Templates"
-          items={[
-            { name: 'ATS Friendly Resume (20)', url: '/Resume_CV_Templates' },
-            { name: 'Web Developer Resume (20)', url: '/Resume_CV_Templates' },
-            { name: 'Doctor Resume (20)', url: '/Resume_CV_Templates' },
-            { name: 'Engineer Resume (20)', url: '/Resume_CV_Templates' },
-            { name: 'Photographer Resume (20)', url: '/Resume_CV_Templates' },
-            { name: 'MIS Executive Resume (20)', url: '/Resume_CV_Templates' },
-            { name: 'School Teacher Resume (20)', url: '/Resume_CV_Templates' },
-          ]}
-        />
-
-        <ListGroup
-          className="active"
-          title="Certificates"
-          items={[
-            { name: 'Warranty Certificates (20)', url: '/Certificates' },
-            { name: 'Experience Certificates (30)', url: '/Certificates' },
-            { name: 'Medical Certificates (10)', url: '/Certificates' },
-            { name: 'Bonafide Certificate (10)', url: '/Certificates' },
-            { name: 'Transfer Certificate (5)', url: '/Certificates' },
-            { name: 'Character Certificate (5)', url: '/Certificates' },
-            { name: 'Course Certificate (10)', url: '/Certificates' },
-          ]}
-        />
-
-        <ListGroup
-          className="active"
-          title="Letterhead Templates"
-          items={[
-            { name: 'Restaurant Letterhead (20)', url: '/LetterHeads' },
-            { name: 'Architecture Letterhead (20)', url: '/LetterHeads' },
-            { name: 'Real Estate Letterhead (20)', url: '/LetterHeads' },
-            { name: 'Event Planner Letterhead (20)', url: '/LetterHeads' },
-            { name: 'Lawyer Letterhead (20)', url: '/LetterHeads' },
-            { name: 'Doctor Letterhead (20)', url: '/LetterHeads' },
-            { name: 'Pharmacy Letterhead (20)', url: '/LetterHeads' },
-          ]}
-        />
+              <ListGroup key={group.title}
+                title={group.title}
+                items={group.items}
+                onSelect={group.onSelect}
+                className="active"
+                listClassName="col-md-3 mb-3"
+                />
+            ))}
         </div>
+    </div>
       
-
-      <div className="row mb-4 p-4">
-        <ListGroup
-          className="active"
-          title="Resume CV Templates"
-          items={[
-            { name: 'ATS Friendly Resume (20)', url: '/Resume_CV_Templates' },
-            { name: 'Modern Resume Templates (50)', url: '/Resume_CV_Templates' },
-            { name: 'Fresher Resume Templates (70)', url: '/Resume_CV_Templates' },
-            { name: 'Business Analyst Resume (20)', url: '/Resume_CV_Templates' },
-            { name: 'MIS Executive Resume (20)', url: '/Resume_CV_Templates' },
-            { name: 'Accountant Resume (20)', url: '/Resume_CV_Templates' },
-            { name: 'School Teacher Resume (20)', url: '/Resume_CV_Templates' },
-          ]}
-        />
-
-        <ListGroup
-          className="active"
-          title="Online Tools (Free)"
-          items={[
-            { name: 'Income Tax Calculator', url: '/OnlineTools' },
-            { name: 'WhatsApp without Save No.', url: '/OnlineTools' },
-            { name: 'Date to Text Converter', url: '/OnlineTools' },
-            { name: 'GST Calculator for Bulk', url: '/OnlineTools' },
-            { name: 'Keyboard Tester', url: '/OnlineTools' },
-            { name: 'Age Calculator', url: '/OnlineTools' },
-            { name: 'EMI Calculator', url: '/OnlineTools' },
-          ]}
-        />
-
-        <ListGroup
-          className="active"
-          title="Productive"
-          items={[
-            { name: 'PowerPoint Templates (20)', url: '/Productive' },
-            { name: 'Payment Voucher (50)', url: '/Productive' },
-            { name: 'Shortcut Keys (80)', url: '/Productive' },
-            { name: 'YouTube Art (30)', url: '/Productive' },
-            { name: 'YouTube Name Ideas (2000)', url: '/Productive' },
-            { name: 'Photoshop Clip Arts', url: '/Productive' },
-            { name: 'Corel Formats', url: '/Productive' },
-          ]}
-        />
-
-        <ListGroup
-          className="active"
-          title="Bank & NOC Letters"
-          items={[
-            { name: 'Bank Statement Request Letter (5)', url: '/Bank_NOC_Letters' },
-            { name: 'NOC Letter Format for Bank (5)', url: '/Bank_NOC_Letters' },
-            { name: 'NOC Letter for GST (5)', url: '/Bank_NOC_Letters' },
-            { name: 'NOC Letter for Visa (5)', url: '/Bank_NOC_Letters' },
-            { name: 'NOC Letter for Vehicle (5)', url: '/Bank_NOC_Letters' },
-            { name: 'Undertaking Letter (5)', url: '/Bank_NOC_Letters' },
-          ]}
-        />
-      </div>
-
-      <div className="row mb-4 p-4">
-        <ListGroup
-          className="active"
-          title="Bank Forms (PDF)"
-          items={[
-            { name: 'Citi Bank Forms', url: '/BankForms' },
-            { name: 'PNB Forms', url: '/BankForms' },
-            { name: 'HDFC Forms', url: '/BankForms' },
-            { name: 'Axis Bank Forms', url: '/BankForms' },
-          ]}
-        />
-
-        <ListGroup
-          className="active"
-          title="Employee Management"
-          items={[
-            { name: 'Accountant Job Letter (5)', url: '/EmployeeManagement' },
-            { name: 'Warning Letter To Employee (5)', url: '/EmployeeManagement' },
-            { name: 'Termination Letter (5)', url: '/EmployeeManagement' },
-            { name: 'Job Application Cover Letter (5)', url: '/EmployeeManagement' },
-            { name: 'Internship Experience Letter (5)', url: '/EmployeeManagement' },
-            { name: 'Holiday Announcement (5)', url: '/EmployeeManagement' },
-          ]}
-        />
-
-        <ListGroup
-          className="active"
-          title="HR Letters"
-          items={[
-            { name: 'Salary Increment Offer Letter (5)', url: '/HRLetters' },
-            { name: 'Salary Increment Request (5)', url: '/HRLetters' },
-            { name: 'Job Joining Letter (5)', url: '/HRLetters' },
-            { name: 'Appointment Letter (20)', url: '/HRLetters' },
-            { name: 'Resignation Letter (20)', url: '/HRLetters' },
-          ]}
-        />
-
-        <ListGroup
-          className="active"
-          title="Student & Misc Letters"
-          items={[
-            { name: 'Leave Application to Principal (8)', url: '/Student_Misc_Letters' },
-            { name: 'Bank Account Closing Letter (5)', url: '/Student_Misc_Letters' },
-            { name: 'Bonafide Certificated Letter (5)', url: '/Student_Misc_Letters' },
-            { name: 'TC Letter (5)', url: '/' },
-            { name: 'Internship Offer Letter (5)', url: '/Student_Misc_Letters' },
-            { name: 'Rent Agreement Format (5)', url: '/Student_Misc_Letters' },
-          ]}
-        />
-      </div>
-      </div>
     </>
   );
 }

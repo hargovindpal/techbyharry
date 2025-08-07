@@ -1,43 +1,93 @@
 import React from 'react'
-import FileCard from '../FileCard'
+import FileCard from '../FileCard';
+import PreviewFile from '../PreviewFile';
 
 function WarrantyCertificate() {
-const cardData = [
+ const cardData = [
     {
-      title: 'Warranty A',
+      title: 'Experience A',
+      CardType:'.docx',
+      preview:'',
       url:'/logo.png',
     },
     {
-    title: 'Warranty B',
+    title: 'Experience B',
+    CardType:'.docx',
     url:'/logo.png',
     },
      {
-    title: 'Warranty C',
+    title: 'Experience C',
+    CardType:'.docx',
     url:'/logo.png',
     },
     {
-      title: 'Warranty A',
+      title: 'Experience A',
+      CardType:'.docx',
       url:'/logo.png',
     },
     {
-    title: 'Warranty B',
+    title: 'Experience B',
+    CardType:'.docx',
     url:'/logo.png',
     },
      {
-    title: 'Warranty C',
+    title: 'Experience C',
+    CardType:'.docx',
     url:'/logo.png',
     },
   ];
+  const files=[
+    { 
+      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
+      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
+    },
+
+    { 
+      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
+      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
+    },
+    { 
+      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
+      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
+    },
+
+    { 
+      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
+      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
+    },
+    { 
+      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
+      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
+    },
+
+    { 
+      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
+      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
+    },
+    { 
+      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
+      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
+    },
+
+    { 
+      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
+      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
+    },
+
+  ]
 
 
   return (
     <>
-      <h5>Warranty Certificate</h5><p>Details about warranty...</p>
+      <h5>Experience Certificate</h5>
+      <p>Details about experience...</p>
+      <PreviewFile PreviewFiles={files}/>
       <div className="row mb-4 p-4 g-4">
-              <FileCard card={cardData} />
-            </div>
+        <FileCard card={cardData} />
+      </div>
+  
     </>
-  )
+  );
 }
 
 export default WarrantyCertificate

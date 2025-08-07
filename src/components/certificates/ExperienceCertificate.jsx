@@ -46,6 +46,33 @@ function ExperienceCertificate() {
       imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
       fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
     },
+    { 
+      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
+      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
+    },
+
+    { 
+      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
+      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
+    },
+    { 
+      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
+      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
+    },
+
+    { 
+      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
+      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
+    },
+    { 
+      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
+      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
+    },
+
+    { 
+      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
+      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
+    },
 
   ]
 
