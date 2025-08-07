@@ -3,78 +3,69 @@ import FileCard from '../FileCard';
 import PreviewFile from '../PreviewFile';
 
 function BonafideCertificate() {
+
+
+
   const cardData = [
     {
-      title: 'Experience A',
+      title: 'Bonafide-Certificate-Request-Letter-for-College',
       CardType:'.docx',
-      preview:'',
-      url:'/logo.png',
+      url:'/documents/certificates/bonafide_Certificates/Bonafide-Certificate-Request-Letter-for-College.docx',
     },
     {
-    title: 'Experience B',
+    title: 'Bonafide-Certificate-Request-Letter-for-Employment',
     CardType:'.docx',
-    url:'/logo.png',
+    url:'/documents/certificates/bonafide_Certificates/Bonafide-Certificate-Request-Letter-for-Employment.docx',
     },
      {
-    title: 'Experience C',
+    title: 'Bonafide-Certificate-Request-Letter-for-Scholarship',
     CardType:'.docx',
-    url:'/logo.png',
+    url:'/documents/certificates/bonafide_Certificates/Bonafide-Certificate-Request-Letter-for-Scholarship.docx',
     },
     {
-      title: 'Experience A',
+      title: 'Bonafide-Certificate-Request-Letter-for-School',
       CardType:'.docx',
-      url:'/logo.png',
+      url:'/documents/certificates/bonafide_Certificates/Bonafide-Certificate-Request-Letter-for-School.docx',
     },
     {
-    title: 'Experience B',
+    title: 'Bonafide-Certificate-Request-Letter-for-Visa-Application',
     CardType:'.docx',
-    url:'/logo.png',
+    url:'documents/certificates/bonafide_Certificates/Bonafide-Certificate-Request-Letter-for-Visa-Application.docx',
     },
-     {
-    title: 'Experience C',
-    CardType:'.docx',
-    url:'/logo.png',
-    },
+
   ];
+
+
+
+
   const files=[
     { 
-      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
-      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
+      imgUrl: '/documents/certificates/Img_Certificate/bonafide_certificate/Bonafide-Certificate-Request-Letter-for-College.jpg',
+      fileUrl: '/documents/certificates/bonafide_Certificates/Bonafide-Certificate-Request-Letter-for-College.docx',
     },
 
     { 
-      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
-      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
+      imgUrl: '/documents/certificates/Img_Certificate/bonafide_certificate/Bonafide-Certificate-Request-Letter-for-Employment.jpg',
+      fileUrl: '/documents/certificates/bonafide_Certificates/Bonafide-Certificate-Request-Letter-for-Employment.docx',
     },
     { 
-      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
-      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
-    },
-
-    { 
-      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
-      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
-    },
-    { 
-      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
-      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
+      imgUrl: '/documents/certificates/Img_Certificate/bonafide_certificate/Bonafide-Certificate-Request-Letter-for-Scholarship.jpg',
+      fileUrl: '/documents/certificates/bonafide_Certificates/Bonafide-Certificate-Request-Letter-for-Scholarship.docx',
     },
 
     { 
-      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
-      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
-    },
-    { 
-      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
-      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
+      imgUrl: '/documents/certificates/Img_Certificate/bonafide_certificate/Bonafide-Certificate-Request-Letter-for-School.jpg',
+      fileUrl: '/documents/certificates/bonafide_Certificates/Bonafide-Certificate-Request-Letter-for-School.docx',
     },
 
     { 
-      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
-      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
+      imgUrl: '/documents/certificates/Img_Certificate/bonafide_certificate/Bonafide-Certificate-Request-Letter-for-Visa-Application.jpg',
+      fileUrl: 'documents/certificates/bonafide_Certificates/Bonafide-Certificate-Request-Letter-for-Visa-Application.docx',
     },
 
   ]
+
+
 
 
   return (
