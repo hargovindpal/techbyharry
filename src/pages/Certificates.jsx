@@ -12,6 +12,7 @@ import BonafideCertificate from '../components/certificates/BonafideCertificate'
 import TransferCertificate from '../components/certificates/TransferCertificate';
 import CharacterCertificate from '../components/certificates/CharacterCertificate';
 import CourseCertificate from '../components/certificates/CourseCertificate';
+import NocCertificate from '../components/certificates/NocCertificate';
 
 function Certificates() {
   const location = useLocation(); // ✅ ADD THIS LINE
@@ -22,9 +23,11 @@ function Certificates() {
     { name: "Bonafide Certificate (10)", component: <BonafideCertificate /> },
     { name: "Experience Certificates (30)", component: <ExperienceCertificate /> },
     { name: "Medical Certificates (10)", component: <MedicalCertificate /> },
+    { name: "NOC Certificate (10)", component: <NocCertificate/> },
     { name: "Transfer Certificate (5)", component: <TransferCertificate /> },
     { name: "Character Certificate (5)", component: <CharacterCertificate /> },
     { name: "Course Certificate (10)", component: <CourseCertificate /> },
+    
   ];
 
   useEffect(() => {

@@ -31,13 +31,14 @@ function Home() {
       navigate('/Resume_CV_Templates', { state: { selectedName } });
     },
     items: [
+      { name: 'School Teacher Resume (20)' },
       { name: 'ATS Friendly Resume (20)' },
       { name: 'Web Developer Resume (20)' },
       { name: 'Doctor Resume (20)' },
       { name: 'Engineer Resume (20)' },
       { name: 'Photographer Resume (20)' },
       { name: 'MIS Executive Resume (20)' },
-      { name: 'School Teacher Resume (20)' },
+      
     ],
   },
   {
@@ -126,10 +127,10 @@ function Home() {
       navigate('/BankForms', { state: { selectedName } });
     },
     items: [
-      { name: 'Citi Bank Forms' },
       { name: 'PNB Forms' },
       { name: 'HDFC Forms' },
       { name: 'Axis Bank Forms' },
+      { name: 'Citi Bank Forms' },
     ],
   },
   {

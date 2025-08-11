@@ -19,11 +19,10 @@ function FileCard({card = [] }) {
           {card.map((cardItem, index) => (
             <tr key={index}>
               <td>{index +1}</td>
-              <td>{cardItem.title}</td>
+              <td style={{ textAlign: 'left' }}>{cardItem.title}</td>
               <td>{cardItem.CardType}</td>
               <td>
                 <a href={cardItem.url} download>
-                  
                   <DownloadButton type="button" buttonName="Download" />
                 </a>
               </td>

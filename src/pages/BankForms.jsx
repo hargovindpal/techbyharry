@@ -16,9 +16,10 @@ function BankForms() {
   const [selected, setSelected] = useState(null);
 
   const items = [
-    { name: 'Citi Bank Forms', component: <CitiBankForms /> },
+    
     { name: 'PNB Forms', component: <PNBForms /> },
     { name: 'HDFC Forms', component: <HDFCForms /> },
+    { name: 'Citi Bank Forms', component: <CitiBankForms /> },
     { name: 'Axis Bank Forms', component: <AxisBankForms /> },
   ];
 
@@ -38,7 +39,7 @@ function BankForms() {
       left={
         <ListGroup
           listClassName="w-max-content"
-          title="All Certificates"
+          title="All Bank Forms"
           items={items}
           onSelect={setSelected}
           selectedItem={selected}

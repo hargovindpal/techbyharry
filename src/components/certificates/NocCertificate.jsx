@@ -3,84 +3,74 @@ import FileCard from '../FileCard';
 import PreviewFile from '../PreviewFile';
 
 function NocCertificate() {
-  const cardData = [
+
+const cardData = [
     {
-      title: 'Experience A',
-      CardType:'.docx',
-      preview:'',
-      url:'/logo.png',
-    },
-    {
-    title: 'Experience B',
-    CardType:'.docx',
-    url:'/logo.png',
-    },
-     {
-    title: 'Experience C',
-    CardType:'.docx',
-    url:'/logo.png',
+      title: 'NOC-for-Vehicle-Loan-Settlement-and-Transfer',
+      CardType: '.docx',
+      url: '/documents/certificates/NOC_certificates/NOC-for-Vehicle-Loan-Settlement-and-Transfer.docx',
     },
     {
-      title: 'Experience A',
-      CardType:'.docx',
-      url:'/logo.png',
+      title: 'Bonafide-Certificate-Request-Letter-for-Employment',
+      CardType: '.docx',
+      url: '/documents/certificates/NOC_certificates/NOC-for-Vehicle-Sale-and-Transfer.docx',
     },
     {
-    title: 'Experience B',
-    CardType:'.docx',
-    url:'/logo.png',
+      title: 'Bonafide-Certificate-Request-Letter-for-Scholarship',
+      CardType: '.docx',
+      url: '/documents/certificates/NOC_certificates/NOC-for-Vehicle-Transfer-Due-to-Relocation.docx',
     },
-     {
-    title: 'Experience C',
-    CardType:'.docx',
-    url:'/logo.png',
+    {
+      title: 'Bonafide-Certificate-Request-Letter-for-School',
+      CardType: '.docx',
+      url: '/documents/certificates/NOC_certificates/NOC-for-Vehicle-Transfer-to-a-Family-Member.docx',
     },
+    {
+      title: 'Notice-to-Vacate-Letter',
+      CardType: '.docx',
+      url: '/documents/certificates/NOC_certificates/Notice-to-Vacate-Letter.docx',
+    },
+    {
+      title: 'Simple-NOC-for-Vehicle-Transfer',
+      CardType: '.docx',
+      url: '/documents/certificates/NOC_certificates/Simple-NOC-for-Vehicle-Transfer.docx',
+    },
+
   ];
-  const files=[
-    { 
-      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
-      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
-    },
 
-    { 
-      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
-      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
-    },
-    { 
-      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
-      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
-    },
+const files = [
+  {
+    imgUrl: '/documents/certificates/Img_Certificate/noc_certificate/NOC-for-Vehicle-Loan-Settlement-and-Transfer.jpg',
+    fileUrl: '/documents/certificates/NOC_certificates/NOC-for-Vehicle-Loan-Settlement-and-Transfer.docx',
+  },
+  {
+    imgUrl: '/documents/certificates/Img_Certificate/noc_certificate/NOC-for-Vehicle-Sale-and-Transfer.jpg',
+    fileUrl: '/documents/certificates/NOC_certificates/NOC-for-Vehicle-Sale-and-Transfer.docx',
+  },
+  {
+    imgUrl: '/documents/certificates/Img_Certificate/noc_certificate/NOC-for-Vehicle-Transfer-Due-to-Relocation.jpg',
+    fileUrl: '/documents/certificates/NOC_certificates/NOC-for-Vehicle-Transfer-Due-to-Relocation.docx',
+  },
+  {
+    imgUrl: '/documents/certificates/Img_Certificate/noc_certificate/NOC-for-Vehicle-Transfer-to-a-Family-Member.jpg',
+    fileUrl: '/documents/certificates/NOC_certificates/NOC-for-Vehicle-Transfer-to-a-Family-Member.docx',
+  },
+  {
+    imgUrl: '/documents/certificates/Img_Certificate/noc_certificate/Notice-to-Vacate-Letter.jpg',
+    fileUrl: '/documents/certificates/NOC_certificates/Notice-to-Vacate-Letter.docx',
+  },
+  {
+    imgUrl: '/documents/certificates/Img_Certificate/noc_certificate/Simple-NOC-for-Vehicle-Transfer.jpg',
+    fileUrl: '/documents/certificates/NOC_certificates/Simple-NOC-for-Vehicle-Transfer.docx',
+  },
+];
 
-    { 
-      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
-      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
-    },
-    { 
-      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
-      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
-    },
-
-    { 
-      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
-      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
-    },
-    { 
-      imgUrl: '/documents/application/Img_applications/Entry-Level-Accountant-Application-Letter.jpg',
-      fileUrl: '/documents/application/Entry-Level-Accountant-Application-Letter.docx',
-    },
-
-    { 
-      imgUrl: '/documents/application/Img_applications/Promotion-and-Salary-Increment-Request.jpg',
-      fileUrl: '/documents/application/Promotion-and-Salary-Increment-Request.docx',
-    },
-
-  ]
 
 
   return (
     <>
-      <h5>Experience Certificate</h5>
-      <p>Details about experience...</p>
+      <h5>NOC Certificates</h5>
+      <p>Details about NOC Certificates...</p>
       <PreviewFile PreviewFiles={files}/>
       <div className="row mb-4 p-4 g-4">
         <FileCard card={cardData} />

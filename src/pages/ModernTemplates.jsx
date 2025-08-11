@@ -19,7 +19,7 @@ function ModernTemplates() {
   const [selected, setSelected] = useState(null);
 
   const items = [
-    { name: 'Marriage Biodata Templates (120)', component: <MarriageBiodataTemplate /> },
+    { name: 'Marriage Biodata Templates (30)', component: <MarriageBiodataTemplate /> },
     { name: 'CV / Resume Templates (350)', component: <CVResumeTemplate /> },
     { name: 'Cover Letter for Resume (56)', component: <CoverLetter /> },
     { name: 'Accountant Resumes (20)', component: <AccountantResume /> },
