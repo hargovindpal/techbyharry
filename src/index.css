@@ -177,10 +177,17 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0f172a !important;
+    background-color: #0f172a;
     color:#FFF !important;
     padding:0.5rem;
 } 
+.bg-dark{
+    background-color: #0f172a !important;
+}
+.bg-light-Blue{
+    background:linear-gradient(to bottom, #0f172a,#3290cfef, #0f172a)  !important;
+}
+
 
 .w-max-content{
     width: max-content !important;

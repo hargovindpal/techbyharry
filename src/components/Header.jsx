@@ -50,12 +50,15 @@ function Header(){
                 <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
                     <li> <Link to="/">HOME</Link></li>
                     <li><Link to="/">BLOG</Link></li> 
-                    <li><Link to="/">DOWLOAD</Link></li> 
-                    <li><Link to="/">RESUME</Link></li> 
-                    <li><Link to="/">BIO-DATA</Link></li> 
+                    <li><Link to="/">WEBSITE BUILDER</Link></li> 
                     <li><Link to="/">VIDEOS</Link></li> 
                     <li><Link to="/">CONTACT</Link></li> 
-                    <li> <Link to="/" title='Free Tools'>FREE TOOLS<span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">NEW</span></Link></li> 
+                    <li><Link to="/GovtWorks">सरकारी काम</Link></li> 
+                    <li> 
+                        <Link to="/OnlineTools" title='Free Tools'>ONLINE FREE TOOLS
+                            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">NEW</span>
+                        </Link>
+                    </li> 
                     
                 </ul>
             </nav>   
