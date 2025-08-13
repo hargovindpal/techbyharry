@@ -187,7 +187,9 @@ nav{
 .bg-light-Blue{
     background:linear-gradient(to bottom, #0f172a,#3290cfef, #0f172a)  !important;
 }
-
+h5.txt-yellow{
+    color: #fac437 !important;
+}
 
 .w-max-content{
     width: max-content !important;

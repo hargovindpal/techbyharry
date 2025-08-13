@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-function ToolsCard({ ToolCard = [], listClassName = "" }) {
+function ToolsCard({ ToolCard = [], listClassName = "", MainTextColor="" }) {
   return (
     <>
       {ToolCard.map((card, index) => {
@@ -27,7 +27,7 @@ function ToolsCard({ ToolCard = [], listClassName = "" }) {
               <div className="mb-3">
                 <i className="fa-solid fa-pen-to-square" style={{ fontSize: "2rem" }}></i>
               </div>
-              <h5 className="fw-bold">{card.mainHeadText}</h5>
+              <h5 className={`fw-bold ${MainTextColor}`}> {card.mainHeadText}</h5>
               <p style={{ fontSize: "0.9rem", color: "#ffffff", fontWeight: "500" }}>
                 {card.detail}
               </p>

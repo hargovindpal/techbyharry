@@ -3,7 +3,21 @@ import ToolsCard from '../components/ToolsCard'
 
 function OnlineTools() {
     const ToolsData =[
-
+        {
+            imgUrl:'/onlineToolsImg/FileConvertImg.jpg',
+            innerText:'Free Document Convertor',
+            mainHeadText:'Free Document Convertor',
+            detail:'Your Reliable Solution for Document Convertor',
+            href:'https://www.ilovepdf.com',
+        },
+        
+        {
+            imgUrl:'/onlineToolsImg/freePPT_Img.jpg',
+            innerText:'Free PPT Templates',
+            mainHeadText:'Free PPT Templates',
+            detail:'Your Reliable Solution for PPT Templates',
+            href:'https://www.free-powerpoint-templates-design.com',
+        },
         {
             imgUrl:'/onlineToolsImg/PassportPhoto.jpeg',
             innerText:'Passport Size Photo',
@@ -33,26 +47,14 @@ function OnlineTools() {
             href:'https://me-qr.com/qr-code-generator',
         },
         {
-            imgUrl:'/onlineToolsImg/PassportPhoto.jpeg',
-            innerText:'Passport Size Photo',
-            mainHeadText:'Passport Size Photo',
-            detail:'Your Reliable Solution for Passport Size Photo',
-            href:'https://image.pi7.org/passport-size-photo',
+            imgUrl:'/onlineToolsImg/ResizeImg.jpg',
+            innerText:'Resize Multiple Images',
+            mainHeadText:'Resize Multiple Images',
+            detail:'Your Reliable Solution for Resizing Photos',
+            href:'https://www.birme.net/',
         },
-         {
-            imgUrl:'/onlineToolsImg/PassportPhoto.jpeg',
-            innerText:'Passport Size Photo',
-            mainHeadText:'Passport Size Photo',
-            detail:'Your Reliable Solution for Passport Size Photo',
-            href:'https://image.pi7.org/passport-size-photo',
-        },
-         {
-            imgUrl:'/onlineToolsImg/PassportPhoto.jpeg',
-            innerText:'Passport Size Photo',
-            mainHeadText:'Passport Size Photo',
-            detail:'Your Reliable Solution for Passport Size Photo',
-            href:'https://image.pi7.org/passport-size-photo',
-        },
+         
+         
          {
             imgUrl:'/onlineToolsImg/PassportPhoto.jpeg',
             innerText:'Passport Size Photo',
