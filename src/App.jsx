@@ -16,6 +16,8 @@ import Student_Misc_Letters from "./pages/Student_Misc_Letters"
 import OnlineTools from "./pages/OnlineTools"
 import GovtWorks from "./pages/GovtWorks"
 import AadharSewa from "./pages/AadharSewa"
+import PanCardSewa from "./pages/PanCardSewa"
+import PmAwaas from "./pages/PmAwaas"
 
 
 
@@ -40,6 +42,8 @@ function App() {
             <Route path="/Student_Misc_Letters" element={<Student_Misc_Letters />}/>
             <Route path="/GovtWorks"  element={<GovtWorks/>}/>
             <Route path="/AadharSewa" element={<AadharSewa/>}/>
+            <Route path="/PanCardSewa" element={<PanCardSewa/>}/>
+            <Route path="/PmAwaas" element={<PmAwaas/>}/>
   
           </Routes>
       <Footer />

@@ -6,17 +6,17 @@ const ToolsData =[
 
         { 
             mainHeadText:'अपॉइंटमेंट बुक करे',
-            detail:'Book Appointment at UIDAI',
+            detail:'',
             href:'https://appointments.uidai.gov.in/bookappointment.aspx',
         },
         {
             mainHeadText:'आधार कार्ड डाउनलोड करे',
-            detail:'eAadhaar Download',
+            detail:'',
             href:'https://myaadhaar.uidai.gov.in/genricDownloadAadhaar/en',
         },
         {
             mainHeadText:'आधार PDF का पासवर्ड',
-            detail:'Know Your e-Aadhar Password ',
+            detail:'',
             href:'https://sarkaricsc.com/aadhaar-card-password-checker',
         },
         {
@@ -26,7 +26,7 @@ const ToolsData =[
         },
          {
             mainHeadText:'PVC आधार कार्ड आर्डर करे',
-            detail:'Order Aadhaar PVC Card',
+            detail:'',
             href:'https://myaadhaar.uidai.gov.in/genricPVC/en',
         },
         {
@@ -46,12 +46,12 @@ const ToolsData =[
         },
         {
             mainHeadText:'आधार कार्ड में पता बदले',
-            detail:'Change Address on Aadhar Card',
+            detail:'',
             href:'https://tathya.uidai.gov.in/access/login?role=resident',
         },
         {
             mainHeadText:'आधार कार्ड में संशोधन करे',
-            detail:'Correction on Aadhar Card',
+            detail:'',
             href:'https://myaadhaar.uidai.gov.in',
         },
         {
@@ -80,7 +80,9 @@ const ToolsData =[
         <div className="row mb-4 p-4">
               <ToolsCard ToolCard={ToolsData}
                 listClassName="col-md-3 mb-3 bg-light-Blue"
-                MainTextColor = "txt-yellow"
+                MainTextColor = "txt-yellow bg"
+                ImgToggle ="disp-none"
+                noWhiteBg={true}
                 />
         </div>
       </div>

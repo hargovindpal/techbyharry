@@ -1,29 +1,31 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-function ToolsCard({ ToolCard = [], listClassName = "", MainTextColor="" }) {
+function ToolsCard({ ToolCard = [], listClassName = "", MainTextColor="", ImgToggle = "", noWhiteBg=""}) {
   return (
     <>
       {ToolCard.map((card, index) => {
         const isExternal = card.href.startsWith("http");
+      
         return (
           <div
             className={`card shadow border-0 ${listClassName}`}
             style={{ maxWidth: "300px", margin: "auto" }}
             key={index}
           >
-            <div className="bg-white text-center p-3">
-              {card.imgUrl && (
-                  <img
-                    src={card.imgUrl}
-                    alt="Card"
-                    className="img-fluid mb-2"
-                    style={{ maxHeight: "150px" }}
-                  />
-                )}
-              <h5 className="fw-bold text-success">{card.innerText}</h5>
+            <div className={`text-center p-3 ${!noWhiteBg ? "bg-white" : ""} ${ImgToggle === "disp-none" ? "p-0 m-0" : ""}`}
+                style={{ backgroundColor: "transparent" }}>
+              {ImgToggle !== "disp-none" && card.imgUrl && (
+                <img
+                  src={card.imgUrl}
+                  alt=""
+                  className={`img-fluid mb-2 ${ImgToggle}`}
+                  style={{ maxHeight: "150px" }}
+                />
+              )}
+              <h5 className="fw-bold text-success" style={{ position: "relative", zIndex: 2 }}>{card.innerText}</h5>
             </div>
-            <div className="card-body text-center">
+            <div className="card-body text-center" style={{ position: "relative", zIndex: 2 }}>
               <div className="mb-3">
                 <i className="fa-solid fa-pen-to-square" style={{ fontSize: "2rem" }}></i>
               </div>

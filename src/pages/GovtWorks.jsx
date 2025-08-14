@@ -14,13 +14,19 @@ function GovtWorks() {
             imgUrl:'/govtWorksImg/panCard.jpg',
             mainHeadText:'पैन सेवा',
             detail:'पैन कार्ड से जुड़ीं सारी सुविधायें',
-            href:'https://www.resumeground.com/create-resume',
+            href:'/PanCardSewa',
         },
         {
             imgUrl:'/govtWorksImg/PM_AVAAS.jpg',
             mainHeadText:'पीएम आवास योजना',
             detail:'पीएम आवास से जुड़ीं सारी सुविधायें',
-            href:'https://www.iloveimg.com/upscale-image',
+            href:'/PmAwaas',
+        },
+        {
+            imgUrl:'/govtWorksImg/uppcl.jpg',
+            mainHeadText:'UPPCL ELECTRICITY',
+            detail:'UPPCL से जुड़ीं सारी सुविधायें',
+            href:'https://me-qr.com/qr-code-generator',
         },
         {
             imgUrl:'/govtWorksImg/abhaCard.png',
@@ -52,13 +58,50 @@ function GovtWorks() {
             detail:'राशन कार्ड से जुड़ीं सारी सुविधायें',
             href:'https://me-qr.com/qr-code-generator',
         },
-       
+       {
+            imgUrl:'/govtWorksImg/NSP_NationalScholarship.jpg',
+            mainHeadText:'राशन कार्ड ',
+            detail:'राशन कार्ड से जुड़ीं सारी सुविधायें',
+            href:'https://me-qr.com/qr-code-generator',
+        },
+        {
+            imgUrl:'/govtWorksImg/shochlayaYojana.jpg',
+            mainHeadText:'राशन कार्ड ',
+            detail:'राशन कार्ड से जुड़ीं सारी सुविधायें',
+            href:'https://me-qr.com/qr-code-generator',
+        },
+        {
+            imgUrl:'/govtWorksImg/Pm_KishanYojana.jpg',
+            mainHeadText:'राशन कार्ड ',
+            detail:'राशन कार्ड से जुड़ीं सारी सुविधायें',
+            href:'https://me-qr.com/qr-code-generator',
+        },
+        {
+            imgUrl:'/govtWorksImg/bhoolekh.png',
+            mainHeadText:'राशन कार्ड ',
+            detail:'राशन कार्ड से जुड़ीं सारी सुविधायें',
+            href:'https://me-qr.com/qr-code-generator',
+        },
         
     ]
 
   return (
     <>
-    
+    <div className="jumbotron d-flex justify-content-center flex-column content-center">
+        <div className="heading col-8 mx-auto mt-4">
+          <h1 className="display-8 text-center">
+            All-in-One Website for Government Portals!
+          </h1>
+        </div>
+        <div className="para col-10 mx-auto">
+          <p className="lead fw-semibold text-center">
+            आज के डिजिटल युग में हर नागरिक को सरकारी काम जैसे आधार कार्ड, पैन कार्ड, नरेगा जॉब कार्ड, राशन कार्ड, और विभिन्न योजनाओं की जानकारी की जरूरत होती है। हम आपके लिए लाए हैं एक ऐसा प्लेटफॉर्म जहाँ ये सभी सरकारी काम एक क्लिक में उपलब्ध हैं।
+          </p>
+        </div>
+        <hr className="my-4" />
+      </div>
+
+
     <div className="container-fluid">
         <div className="row mb-4 p-4">
               <ToolsCard ToolCard={ToolsData} style={{ backgroundColor: "0f172a" }}

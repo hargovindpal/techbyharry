@@ -181,15 +181,45 @@ nav{
     color:#FFF !important;
     padding:0.5rem;
 } 
+.disp-none{
+    display: none !important;
+}
 .bg-dark{
     background-color: #0f172a !important;
 }
 .bg-light-Blue{
-    background:linear-gradient(to bottom, #0f172a,#3290cfef, #0f172a)  !important;
+    background:linear-gradient(to bottom, #0f172a, #0f172ac0)  !important;
 }
+
 h5.txt-yellow{
-    color: #fac437 !important;
+    color: #FFF !important;
+    align-content: center;
 }
+h5.bg{
+    background-color:#4682aaef;
+    padding:10px;
+    min-height: 80px;
+    border-radius: 10px;
+}
+
+.aadhar-bg{
+    background-image: url('/govtWorksImg/Bg_Aadhar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.aadhar-bg::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+
 
 .w-max-content{
     width: max-content !important;

@@ -199,12 +199,12 @@ function Home() {
   return (
     <>
       <div className="jumbotron d-flex justify-content-center flex-column content-center">
-        <div className="heading col-8 mx-auto mt-4">
+        <div className="heading col-10 mx-auto mt-4">
           <h1 className="display-8 text-center">
             All-in-One Document Templates Download Resume, Letters & More for Free!
           </h1>
         </div>
-        <div className="para col-8 mx-auto">
+        <div className="para col-10 mx-auto">
           <p className="lead fw-semibold text-center">
             Access 100+ free downloadable templates for resumes, CVs, letters, Excel tools, and more! Streamline your tasks with professionally designed resources.
           </p>
