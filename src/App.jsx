@@ -3,6 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
+
+import Blog from "./pages/Blog";
+import SinglePost from "./pages/SinglePost";
+import NotFound from "./pages/NotFound";
+
 import ModernTemplates from "./pages/ModernTemplates"
 import Resume_CV_Templates from "./pages/Resume_CV_Templates"
 import Certificates from "./pages/Certificates"
@@ -38,6 +43,11 @@ function App() {
       <Header/>
           <Routes>
             <Route path="/" element={<Home/>}/>
+
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<SinglePost />} />
+            <Route path="*" element={<NotFound />} />
+
             <Route path="/ModernTemplates" element={<ModernTemplates/>}/>
             <Route path="/Resume_CV_Templates" element={<Resume_CV_Templates />}/>
             <Route path="/certificates" element={<Certificates />} />

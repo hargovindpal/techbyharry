@@ -49,7 +49,7 @@ function Header(){
             <nav> 
                 <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
                     <li> <Link to="/">HOME</Link></li>
-                    <li><Link to="/">BLOG</Link></li> 
+                    <li><Link to="/Blog">BLOG</Link></li> 
                     <li><Link to="/">WEBSITE BUILDER</Link></li> 
                     <li><Link to="/">VIDEOS</Link></li> 
                     <li><Link to="/">CONTACT</Link></li> 
