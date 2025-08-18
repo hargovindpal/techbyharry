@@ -26,9 +26,7 @@ function ToolsCard({ ToolCard = [], listClassName = "", MainTextColor="", ImgTog
               <h5 className="fw-bold text-success" style={{ position: "relative", zIndex: 2 }}>{card.innerText}</h5>
             </div>
             <div className="card-body text-center" style={{ position: "relative", zIndex: 2 }}>
-              <div className="mb-3">
-                <i className="fa-solid fa-pen-to-square" style={{ fontSize: "2rem" }}></i>
-              </div>
+              
               <h5 className={`fw-bold ${MainTextColor}`}> {card.mainHeadText}</h5>
               <p style={{ fontSize: "0.9rem", color: "#ffffff", fontWeight: "500" }}>
                 {card.detail}
@@ -39,14 +37,14 @@ function ToolsCard({ ToolCard = [], listClassName = "", MainTextColor="", ImgTog
                   href={card.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-info text-white fw-bold px-4"
+                  className="btn card-btn fw-bold px-4"
                 >
                   Click Here
                 </a>
               ) : (
                 <Link
                   to={card.href}
-                  className="btn btn-info text-white fw-bold px-4"
+                  className="btn card-btn fw-bold px-4"
                 >
                   Click Here
                 </Link>

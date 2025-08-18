@@ -95,6 +95,7 @@ function OnlineTools() {
         <div className="row mb-4 p-4">
               <ToolsCard ToolCard={ToolsData} ImgBackGround="white"
                 listClassName="col-md-3 mb-3 bg-dark"
+                MainTextColor="black"
                 />
         </div>
       </div>

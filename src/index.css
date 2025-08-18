@@ -173,33 +173,80 @@ nav{
 
 
 
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0f172a;
-    color:#FFF !important;
-    padding:0.5rem;
-} 
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 10px !important;
+  color: #fff !important;
+  background: linear-gradient(135deg, #ffdd57, #f8b409);
+box-shadow:  16px 16px 32px #835f05,
+             -16px -16px 32px #ffff0d;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 
+    4px 4px 8px #0a0f1f, 
+    -4px -4px 8px #141d35;
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.card:active {
+  box-shadow: 
+    inset 4px 4px 8px #0a0f1f,
+    inset -4px -4px 8px #141d35;
+  transform: translateY(2px);
+}
+
+.card-btn {
+  background: linear-gradient(135deg, #f8b409, #ffdd57);
+  color: #222 !important;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.2), -4px -4px 8px rgba(255,255,255,0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.card-btn:hover {
+  background: linear-gradient(135deg, #ffdd57, #f8b409);
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 12px rgba(0,0,0,0.25), -6px -6px 12px rgba(255,255,255,0.5);
+}
+
 .disp-none{
     display: none !important;
 }
 .bg-dark{
     background-color: #0f172a !important;
 }
-.bg-light-Blue{
-    background:linear-gradient(to bottom, #0f172a, #0f172ac0)  !important;
+
+.black{
+    color:black;
+}
+h5.txt-yellow {
+  color: #222 !important;   /* softer black */
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
-h5.txt-yellow{
-    color: #FFF !important;
-    align-content: center;
-}
-h5.bg{
-    background-color:#4682aaef;
-    padding:10px;
-    min-height: 80px;
-    border-radius: 10px;
+h5.bg {
+  background: linear-gradient(135deg, #ffdd57, #f8b409); /* subtle gradient */
+  padding: 12px 16px;
+  min-height: 80px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  font-size: 1.1rem;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15), -2px -2px 6px rgba(255,255,255,0.5);
+  transition: all 0.3s ease-in-out;
 }
 
 .aadhar-bg{

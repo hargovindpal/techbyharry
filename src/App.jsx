@@ -18,6 +18,15 @@ import GovtWorks from "./pages/GovtWorks"
 import AadharSewa from "./pages/AadharSewa"
 import PanCardSewa from "./pages/PanCardSewa"
 import PmAwaas from "./pages/PmAwaas"
+import BhoolekhSewa from "./pages/BhoolekhSewa"
+import AbhaCardSewa from "./pages/AbhaCardSewa"
+import VoterIdCardSewa from "./pages/VoterIdCardSewa"
+import ApaarIdSewa from "./pages/ApaarIdSewa"
+import GasSubsidy from "./pages/GasSubsidy"
+import RationCardSewa from "./pages/RationCardSewa"
+import ScholarshipYojana from "./pages/ScholarshipYojana"
+import ShochalayaYojana from "./pages/ShochalayaYojana"
+import PmKishanSammanNidhi from "./pages/PmKishanSammanNidhi"
 
 
 
@@ -44,6 +53,18 @@ function App() {
             <Route path="/AadharSewa" element={<AadharSewa/>}/>
             <Route path="/PanCardSewa" element={<PanCardSewa/>}/>
             <Route path="/PmAwaas" element={<PmAwaas/>}/>
+            <Route path="/BhoolekhSewa" element={<BhoolekhSewa/>}/>
+            <Route path="/AbhaCardSewa" element={<AbhaCardSewa/>}/>
+            <Route path="/VoterIdCardSewa" element={<VoterIdCardSewa/>}/>
+            <Route path="/ApaarIdSewa" element={<ApaarIdSewa/>}/>
+            <Route path="/GasSubsidy" element={<GasSubsidy/>}/>
+            <Route path="/RationCardSewa" element={<RationCardSewa/>}/>
+            <Route path="/ScholarshipYojana" element={<ScholarshipYojana/>}/>
+            <Route path="/ShochalayaYojana" element={<ShochalayaYojana/>}/>
+            <Route path="/PmKishanSammanNidhi" element={<PmKishanSammanNidhi/>}/>
+
+            
+
   
           </Routes>
       <Footer />

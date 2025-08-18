@@ -26,61 +26,61 @@ function GovtWorks() {
             imgUrl:'/govtWorksImg/uppcl.jpg',
             mainHeadText:'UPPCL ELECTRICITY',
             detail:'UPPCL से जुड़ीं सारी सुविधायें',
-            href:'https://me-qr.com/qr-code-generator',
+            href:'https://consumer.uppcl.org/wss/home',
         },
         {
             imgUrl:'/govtWorksImg/abhaCard.png',
             mainHeadText:'(ABHA) आभा कार्ड',
             detail:'आभा कार्ड से जुड़ीं सारी सुविधायें',
-            href:'https://me-qr.com/qr-code-generator',
+            href:'/AbhaCardSewa',
         },
          {
             imgUrl:'/govtWorksImg/VOTER_CARD.jpg',
             mainHeadText:'(VOTER)वोटर कार्ड ',
             detail:'वोटर कार्ड से जुड़ीं सारी सुविधायें',
-            href:'https://me-qr.com/qr-code-generator',
+            href:'/VoterIdCardSewa',
         },
        {
             imgUrl:'/govtWorksImg/apaar_card.webp',
             mainHeadText:'(APAAR ID) कार्ड ',
             detail:'(APAAR ID) कार्ड से जुड़ीं सारी सुविधायें',
-            href:'https://me-qr.com/qr-code-generator',
+            href:'/ApaarIdSewa',
         },
         {
             imgUrl:'/govtWorksImg/gas_subsidy.webp',
             mainHeadText:'गैस सब्सिडी ',
             detail:'गैस सब्सिडी से जुड़ीं सारी सुविधायें',
-            href:'https://me-qr.com/qr-code-generator',
+            href:'/GasSubsidy',
         },
         {
             imgUrl:'/govtWorksImg/Ration_Card.jpg',
             mainHeadText:'राशन कार्ड ',
             detail:'राशन कार्ड से जुड़ीं सारी सुविधायें',
-            href:'https://me-qr.com/qr-code-generator',
+            href:'/RationCardSewa',
         },
        {
             imgUrl:'/govtWorksImg/NSP_NationalScholarship.jpg',
-            mainHeadText:'राशन कार्ड ',
-            detail:'राशन कार्ड से जुड़ीं सारी सुविधायें',
-            href:'https://me-qr.com/qr-code-generator',
+            mainHeadText:'NSP नेशनल स्कालरशिप ',
+            detail:'NSP नेशनल स्कालरशिप से जुड़ीं सारी सुविधायें',
+            href:'/ScholarshipYojana',
         },
         {
             imgUrl:'/govtWorksImg/shochlayaYojana.jpg',
-            mainHeadText:'राशन कार्ड ',
-            detail:'राशन कार्ड से जुड़ीं सारी सुविधायें',
-            href:'https://me-qr.com/qr-code-generator',
+            mainHeadText:'शौचालय योजना (रू.12000) ',
+            detail:'शौचालय योजना से जुड़ीं सारी सुविधायें',
+            href:'/ShochalayaYojana',
         },
         {
             imgUrl:'/govtWorksImg/Pm_KishanYojana.jpg',
-            mainHeadText:'राशन कार्ड ',
-            detail:'राशन कार्ड से जुड़ीं सारी सुविधायें',
-            href:'https://me-qr.com/qr-code-generator',
+            mainHeadText:'पीएम किसान ',
+            detail:'पीएम किसान से जुड़ीं सारी सुविधायें',
+            href:'/PmKishanSammanNidhi',
         },
         {
             imgUrl:'/govtWorksImg/bhoolekh.png',
-            mainHeadText:'राशन कार्ड ',
-            detail:'राशन कार्ड से जुड़ीं सारी सुविधायें',
-            href:'https://me-qr.com/qr-code-generator',
+            mainHeadText:'भूलेख ',
+            detail:'भूलेख से जुड़ीं सारी सुविधायें',
+            href:'/BhoolekhSewa',
         },
         
     ]
@@ -106,6 +106,7 @@ function GovtWorks() {
         <div className="row mb-4 p-4">
               <ToolsCard ToolCard={ToolsData} style={{ backgroundColor: "0f172a" }}
                 listClassName="col-md-3 mb-3 bg-dark"
+                MainTextColor="black"
                 />
         </div>
       </div>
