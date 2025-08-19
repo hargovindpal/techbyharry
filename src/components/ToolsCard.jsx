@@ -28,7 +28,7 @@ function ToolsCard({ ToolCard = [], listClassName = "", MainTextColor="", ImgTog
             <div className="card-body text-center" style={{ position: "relative", zIndex: 2 }}>
               
               <h5 className={`fw-bold ${MainTextColor}`}> {card.mainHeadText}</h5>
-              <p style={{ fontSize: "0.9rem", color: "#ffffff", fontWeight: "500" }}>
+              <p style={{ fontSize: "0.9rem", color: "green", fontWeight: "600" }}>
                 {card.detail}
               </p>
 

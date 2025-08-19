@@ -143,34 +143,40 @@ nav{
 }
 
 .list-group-item.active{
-    background-color: black !important;
+    background: linear-gradient(135deg,#f8b409, #ffdd57, #f8b409) !important;
     font-size: 1.2rem;
     font-weight: 600;
     border:none;
+    color:black !important;
 }
+
 
 .list-group .list-group-item:not(:first-child)::before{
     content: "\f07c";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: rgb(158, 103, 35);
+    color: rgb(230, 109, 10);
     margin-right: 8px;
 }
 .list-group a:hover{
    transition: transform 0.3s ease, background-color 0.3s ease;
+   color: red !important;
 }
 .list-group a:hover:not(.active){
     background-color: #fac437 !important;
-    transform: scale(1.01);
 } 
 
 .list-group-item.active {
     background-color: #ffbf00;
-    color: black;
-    font-weight: bold;
+    color: rgb(190, 80, 7);
     border-color: #ffa500;
 }
 
+.list-group-item-action:hover:not(.active) {
+    width: 100%;
+    color: rgb(190, 80, 7) !important;
+    font-weight: 600;
+}
 
 
 .card {

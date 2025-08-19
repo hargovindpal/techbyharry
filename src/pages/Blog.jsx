@@ -25,7 +25,7 @@ function Blog() {
                 />
               )}
               <div className="card-body d-flex flex-column">
-                <h3 className="fw-bold">{post.title}</h3>
+                <h3 className="fw-bold text-secondary">{post.title}</h3>
                 <p className="text-muted small">
                   {formatDate(post.date)} • {post.category}
                 </p>

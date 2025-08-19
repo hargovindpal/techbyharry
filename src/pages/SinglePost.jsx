@@ -51,7 +51,7 @@ function SinglePost() {
       {/* Blog Card Layout */}
       <div className="card shadow-lg border-0 rounded-4 p-4">
         {/* Title */}
-        <h1 className="fw-bold mb-3 text-center display-5">{post.title}</h1>
+        <h1 className="fw-bold mb-3 text-center display-5 text-secondary">{post.title}</h1>
 
         {/* Meta Info */}
         <p className="text-muted text-center mb-4">

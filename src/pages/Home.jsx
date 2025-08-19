@@ -4,10 +4,35 @@ import { useNavigate } from 'react-router-dom'
 
 import ListGroup from '../components/ListGroup'
 import PrimaryButton from '../components/PrimaryButton'
+import ToolsCard from '../components/ToolsCard'
 
 function Home() {
 
   const navigate = useNavigate();
+
+
+  const ToolsData =[
+
+        {
+            mainHeadText:'Unified Govt. Portals',
+            detail:'"Access government services, schemes, portals, updates with quick links."',
+            href:'/GovtWorks',
+        },
+        {
+            mainHeadText:'Online Free Tools',
+            detail:'"Use online free tools for productivity, creativity, efficiency, and growth."',
+            href:'/OnlineTools',
+        },
+        {
+            mainHeadText:'My Blogs',
+            detail:'"Read my blogs for insights, ideas, knowledge, tips, updates, experiences, and stories."',
+            href:'/Blog',
+        },
+
+      ]
+
+
+
   const listGroups = [
   {
     title: 'Modern Templates',
@@ -198,6 +223,20 @@ function Home() {
 
   return (
     <>
+       <div className="container-fluid">
+        <div className="row mb-0 p-2">
+              <ToolsCard ToolCard={ToolsData}
+                listClassName="bg-dark col-md-3 mb-3"
+                MainTextColor = "txt-yellow"
+                ImgToggle ="disp-none"
+                noWhiteBg={true}
+                />
+        </div>
+      </div>
+
+
+
+
       <div className="jumbotron d-flex justify-content-center flex-column content-center">
         <div className="heading col-10 mx-auto mt-4">
           <h1 className="display-8 text-center">
