@@ -107,6 +107,7 @@ function GovtWorks() {
               <ToolsCard ToolCard={ToolsData} style={{ backgroundColor: "0f172a" }}
                 listClassName="col-md-3 mb-3 bg-dark"
                 MainTextColor="black"
+                ImgToggle="rounded-border"
                 />
         </div>
       </div>

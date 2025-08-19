@@ -96,6 +96,7 @@ function OnlineTools() {
               <ToolsCard ToolCard={ToolsData} ImgBackGround="white"
                 listClassName="col-md-3 mb-3 bg-dark"
                 MainTextColor="black"
+                ImgToggle="rounded-border"
                 />
         </div>
       </div>

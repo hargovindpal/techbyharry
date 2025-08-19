@@ -14,16 +14,19 @@ function Home() {
   const ToolsData =[
 
         {
+            imgUrl:"/Digital_India.webp",
             mainHeadText:'Unified Govt. Portals',
             detail:'"Access government services, schemes, portals, updates with quick links."',
             href:'/GovtWorks',
         },
         {
+          imgUrl:"/onlineFreeToolsImg.jpg",
             mainHeadText:'Online Free Tools',
             detail:'"Use online free tools for productivity, creativity, efficiency, and growth."',
             href:'/OnlineTools',
         },
         {
+          imgUrl:"/blog.webp",
             mainHeadText:'My Blogs',
             detail:'"Read my blogs for insights, ideas, knowledge, tips, updates, experiences, and stories."',
             href:'/Blog',
@@ -223,21 +226,8 @@ function Home() {
 
   return (
     <>
-       <div className="container-fluid">
-        <div className="row mb-0 p-2">
-              <ToolsCard ToolCard={ToolsData}
-                listClassName="bg-dark col-md-3 mb-3"
-                MainTextColor = "txt-yellow"
-                ImgToggle ="disp-none"
-                noWhiteBg={true}
-                />
-        </div>
-      </div>
 
-
-
-
-      <div className="jumbotron d-flex justify-content-center flex-column content-center">
+  <div className="jumbotron d-flex justify-content-center flex-column content-center">
         <div className="heading col-10 mx-auto mt-4">
           <h1 className="display-8 text-center">
             All-in-One Document Templates Download Resume, Letters & More for Free!
@@ -250,6 +240,25 @@ function Home() {
         </div>
         <hr className="my-4" />
       </div>
+
+
+
+
+       <div className="container-fluid">
+        <div className="row mb-0 p-2">
+              <ToolsCard ToolCard={ToolsData}
+                listClassName="bg-dark col-md-3 mb-3"
+                MainTextColor = "txt-yellow"
+                
+                ImgToggle="rounded-border"
+                />
+        </div>
+      </div>
+
+
+
+
+    
 
       <div className="container-fluid">
         <div className="row mb-4 p-4">

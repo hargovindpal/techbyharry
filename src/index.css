@@ -199,6 +199,9 @@ box-shadow:  16px 16px 32px #835f05,
   transform: translateY(-4px);
   cursor: pointer;
 }
+.rounded-border{
+    border-radius: 10px;
+}
 
 .card:active {
   box-shadow: 
