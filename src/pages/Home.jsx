@@ -26,6 +26,12 @@ function Home() {
             href:'/OnlineTools',
         },
         {
+          imgUrl:"/exam_paper_generator.jpg",
+            mainHeadText:'Question Paper Maker',
+            detail:'"Create customized question papers online quickly, easily, and completely free"',
+            href:'https://harryqmaker.netlify.app',
+        },
+        {
           imgUrl:"/blog.webp",
             mainHeadText:'My Blogs',
             detail:'"Read my blogs for insights, ideas, knowledge, tips, updates, experiences, and stories."',
